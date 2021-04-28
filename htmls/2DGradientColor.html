@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Color Generate</title>
+</head>
+
+<body>
+    <nav>
+        <a href="./index.html">Plan Color</a>
+        <a href="./2DGradientColor.html" class="active">2-D Gradient Color</a>
+        <a href="./3DGradientColor.html">3-D Gradient Color</a>
+    </nav>
+    <hr>
+    <div>
+        <div class="header">
+            <input type="text" id="input" placeholder="Enter Number" maxlength="4">
+            <select id="effect">
+                <option value="left">&#8592;</option>
+                <option value="top">&#8593;</option>
+                <option value="right">&#8594;</option>
+                <option value="bottom">&#8595;</option>
+                <option value="left top">&#8598;</option>
+                <option value="right top">&#8599;</option>
+                <option value="right bottom">&#8600;</option>
+                <option value="left bottom">&#8601;</option>
+                <option value="circle">&#8634;</option>
+            </select>
+            <button onclick="run()">Generate</button>
+        </div>
+        <div class="row" id="div"></div>
+    </div>
+    <script src="../script/2dscript.js "></script>
+</body>
+
+</html>
