@@ -10,7 +10,7 @@ function run() {
             color += string.charAt(Math.floor(Math.random() * string.length));
         }
         body += `<div class="column" style="background-color:${color};
-        height: 100px;">${color}</div>`
+        height: 100px;"></div>`
     }
     div.innerHTML = body;
     document.getElementById('input').value = '';
